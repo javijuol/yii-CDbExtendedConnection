@@ -21,10 +21,12 @@ Extends CDbExtendedConnection in Yii Framework to allow multiple query in a sing
            ),
  
   Example:
+  
   $result  = Yii::app()->db->createCommand('SELECT * FROM post; SELECT * FROM comment')->queryMulti();
   $results = Yii::app()->db->createCommand('SELECT * FROM post; SELECT * FROM comment')->queryAllMulti();
  
   Output:
+  
   $result = array(
    0 => "post"
    1 => "comment"
